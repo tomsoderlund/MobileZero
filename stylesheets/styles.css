@@ -1,0 +1,137 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 32px;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+a {
+	color: #09F;
+	/* text-decoration: none; */
+}
+a:hover { color: #0BF; }
+a:active { color: #27D1FF; }
+a:visited { /* color: #69C; */ }
+
+#header, #footer {
+	width: 100%;
+	background-color: #b8c9df;
+	background-image: url('../images/background_highlight.png');
+	background-repeat: repeat-x;
+}
+
+#header a, #footer a {
+	text-decoration: none;
+}
+
+#header {
+	position: fixed;
+	z-index: 10;
+	height: 88px;
+	line-height: 88px;
+	text-align: center;
+}
+
+#header .left {
+	position: absolute;
+	top: 0px;
+	left: 30px;
+	cursor: pointer;
+}
+
+#header .right {
+	position: absolute;
+	top: 0px;
+	right: 30px;
+	cursor: pointer;
+}
+
+#header h1 {
+	position: relative;
+	text-align: center;
+	left: 50%;
+	margin-left: -250px;
+	width: 500px;
+	font-size: 44px;
+	color: #555;
+	text-shadow: 2px 2px 0px #FFF;
+}
+
+#content {
+	position: relative;
+	top: 88px;
+	width: 600px;
+	left: 50%;
+	margin-left: -320px;
+	padding: 20px;
+}
+
+#footer {
+	/*
+	// Use this instead if you need a footer that floats down with the content
+	
+	position: relative;
+	top: 60px;
+	*/
+	position: absolute;
+	bottom: 0px;
+	height: 50px;
+	background-size: 88px 51px;
+	line-height: 50px;
+	font-size: 75%;
+	text-align: center;
+}
+
+input, textarea, select, button, .button {
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 100%;
+	line-height: 50px;
+	margin: 10px 0px 10px 0px;
+	border-radius: 15px;
+	padding: 5px 10px 5px 10px;
+	outline: none;
+	width: 580px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	width: 58px;
+	height: 50px;
+	background-color: #9dbadf;
+}
+
+input[type="submit"], input[type="button"], button, .button {
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	width: 600px;
+	height: 84px;
+	line-height: 84px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 130%;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0px -2px 0px #336699;
+	background-color: #0099FF;
+	border: 2px solid #336699;
+	padding: 0px;
+	background-image: url('../images/background_highlight.png');
+	background-repeat: repeat-x;
+	background-size: 88px 84px;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover, button:hover, .button:hover {
+	background-color: #36afff;
+}
+
+input[type="submit"]:active, input[type="button"]:active, button:active, .button:active {
+	left: 2px;
+	top: 3px;
+}
