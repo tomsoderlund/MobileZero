@@ -1,3 +1,9 @@
+/*
+
+ MobileZero stylesheet
+
+*/
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -18,7 +24,10 @@ a {
 }
 a:hover { color: #0BF; }
 a:active { color: #27D1FF; }
-a:visited { /* color: #69C; */ }
+
+li {
+	margin-left: 30px;
+}
 
 #header, #footer {
 	width: 100%;
@@ -29,6 +38,7 @@ a:visited { /* color: #69C; */ }
 
 #header a, #footer a {
 	text-decoration: none;
+	color: white;
 }
 
 #header {
@@ -57,8 +67,8 @@ a:visited { /* color: #69C; */ }
 	position: relative;
 	text-align: center;
 	left: 50%;
-	margin-left: -250px;
-	width: 500px;
+	margin-left: -320px;
+	width: 640px;
 	font-size: 44px;
 	color: #555;
 	text-shadow: 2px 2px 0px #FFF;
@@ -118,8 +128,8 @@ input[type="submit"], input[type="button"], button, .button {
 	font-size: 130%;
 	font-weight: bold;
 	color: white;
-	text-shadow: 0px -2px 0px #336699;
 	background-color: #0099FF;
+	text-shadow: 0px -2px 0px #336699;
 	border: 2px solid #336699;
 	padding: 0px;
 	background-image: url('../images/background_highlight.png');
@@ -129,6 +139,7 @@ input[type="submit"], input[type="button"], button, .button {
 
 input[type="submit"]:hover, input[type="button"]:hover, button:hover, .button:hover {
 	background-color: #36afff;
+	color: white;
 }
 
 input[type="submit"]:active, input[type="button"]:active, button:active, .button:active {
