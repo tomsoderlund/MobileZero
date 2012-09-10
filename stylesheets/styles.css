@@ -34,11 +34,8 @@ li {
 	background-color: #b8c9df;
 	background-image: url('../images/background_highlight.png');
 	background-repeat: repeat-x;
-}
-
-#header a, #footer a {
-	text-decoration: none;
-	color: white;
+	color: #555;
+	text-shadow: 0px 2px 0px #FFF;
 }
 
 #header {
@@ -49,18 +46,39 @@ li {
 	text-align: center;
 }
 
-#header .left {
+#header a, #footer a {
+	text-decoration: none;
+	color: white;
+	text-shadow: none;
+}
+
+#header a {
+	display: inline-block;
 	position: absolute;
-	top: 0px;
-	left: 30px;
+	top: 14px;
 	cursor: pointer;
+	width: 120px;
+	height: 58px;
+	border-radius: 14px;
+	line-height: 58px;
+	background-size: 120px 58px;
+	background-image: url('../images/background_highlight_inset.png');
+	background-color: #9eacbf;
+	text-shadow: 0px -2px 0px #778290;
+	font-size: 80%;
+	font-weight: bold;
+}
+
+#header a:active {
+	background-color: #b1c1d6;
+}
+
+#header .left {
+	left: 16px;
 }
 
 #header .right {
-	position: absolute;
-	top: 0px;
-	right: 30px;
-	cursor: pointer;
+	right: 16px;
 }
 
 #header h1 {
@@ -70,8 +88,7 @@ li {
 	margin-left: -320px;
 	width: 640px;
 	font-size: 44px;
-	color: #555;
-	text-shadow: 2px 2px 0px #FFF;
+	text-shadow: 0px 2px 0px #FFF;
 }
 
 #content {

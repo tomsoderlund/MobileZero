@@ -1,8 +1,12 @@
 // When document has finished loading
 $(document).ready(function() {
 	
-	$("a").click(function(event){
+	$("button").click(function(event){
 		alert("Thanks for using MobileZero!");
+	});
+
+	$(".left").click(function(event){
+		alert("Left");
 	});
 	
 });
