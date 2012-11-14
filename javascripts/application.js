@@ -8,5 +8,9 @@ $(document).ready(function() {
 	$(".left").click(function(event){
 		alert("Left");
 	});
+
+	$(".right").click(function(event){
+		alert("Right");
+	});
 	
 });

@@ -11,11 +11,11 @@
 
 body {
 	font-family: 'Helvetica Neue', sans-serif;
-	font-size: 32px;
+	font-size: 16px;
 }
 
 p {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 a {
@@ -26,7 +26,7 @@ a:hover { color: #0BF; }
 a:active { color: #27D1FF; }
 
 li {
-	margin-left: 30px;
+	margin-left: 15px;
 }
 
 #header, #footer {
@@ -35,69 +35,70 @@ li {
 	background-image: url('../images/background_highlight.png');
 	background-repeat: repeat-x;
 	color: #555;
-	text-shadow: 0px 2px 0px #FFF;
+	text-shadow: 0px 1px 0px #FFF;
 }
 
 #header {
 	position: fixed;
 	z-index: 10;
-	height: 88px;
-	line-height: 88px;
+	height: 44px;
+	line-height: 44px;
 	text-align: center;
+	background-size: 44px 44px;
 }
 
 #header a, #footer a {
-	text-decoration: none;
 	color: white;
+	text-decoration: none;
 	text-shadow: none;
 }
 
 #header a {
 	display: inline-block;
 	position: absolute;
-	top: 14px;
+	top: 7px;
 	cursor: pointer;
-	width: 120px;
-	height: 58px;
-	border-radius: 14px;
-	line-height: 58px;
-	background-size: 120px 58px;
+	width: 60px;
+	height: 29px;
+	border-radius: 7px;
+	line-height: 29px;
+	background-size: 60px 29px;
 	background-image: url('../images/background_highlight_inset.png');
 	background-color: #9eacbf;
-	text-shadow: 0px -2px 0px #778290;
+	text-shadow: 0px -1px 0px #778290;
 	font-size: 80%;
 	font-weight: bold;
 }
 
-#header a:active {
+#header a:hover {
 	background-color: #b1c1d6;
 }
 
 #header .left {
-	left: 16px;
+	left: 8px;
 }
 
 #header .right {
-	right: 16px;
+	right: 8px;
 }
 
 #header h1 {
 	position: relative;
 	text-align: center;
 	left: 50%;
-	margin-left: -320px;
-	width: 640px;
-	font-size: 44px;
-	text-shadow: 0px 2px 0px #FFF;
+	margin-left: -160px;
+	width: 320px;
+	font-size: 22px;
+	text-shadow: 0px 1px 0px #FFF;
 }
 
 #content {
 	position: relative;
-	top: 88px;
-	width: 600px;
+	top: 44px;
 	left: 50%;
-	margin-left: -320px;
-	padding: 20px;
+	width: 300px;
+	margin-left: -160px;
+	padding: 10px;
 }
 
 #footer {
@@ -105,13 +106,13 @@ li {
 	// Use this instead if you need a footer that floats down with the content
 	
 	position: relative;
-	top: 60px;
+	top: 30px;
 	*/
 	position: absolute;
 	bottom: 0px;
-	height: 50px;
-	background-size: 88px 51px;
-	line-height: 50px;
+	height: 25px;
+	background-size: 44px 26px;
+	line-height: 25px;
 	font-size: 75%;
 	text-align: center;
 }
@@ -119,17 +120,17 @@ li {
 input, textarea, select, button, .button {
 	font-family: 'Helvetica Neue', sans-serif;
 	font-size: 100%;
-	line-height: 50px;
-	margin: 10px 0px 10px 0px;
-	border-radius: 15px;
-	padding: 5px 10px 5px 10px;
+	line-height: 25px;
+	margin: 5px 0px 5px 0px;
+	border-radius: 8px;
+	padding: 3px 5px 3px 5px;
 	outline: none;
-	width: 580px;
+	width: 290px;
 }
 
 input[type="radio"], input[type="checkbox"] {
-	width: 58px;
-	height: 50px;
+	width: 29px;
+	height: 25px;
 	background-color: #9dbadf;
 }
 
@@ -137,21 +138,21 @@ input[type="submit"], input[type="button"], button, .button {
 	display: inline-block;
 	position: relative;
 	cursor: pointer;
-	width: 600px;
-	height: 84px;
-	line-height: 84px;
+	width: 300px;
+	height: 42px;
+	line-height: 42px;
 	text-decoration: none;
 	text-align: center;
 	font-size: 130%;
 	font-weight: bold;
 	color: white;
 	background-color: #0099FF;
-	text-shadow: 0px -2px 0px #336699;
-	border: 2px solid #336699;
+	text-shadow: 0px -1px 0px #336699;
+	border: 1px solid #336699;
 	padding: 0px;
 	background-image: url('../images/background_highlight.png');
 	background-repeat: repeat-x;
-	background-size: 88px 84px;
+	background-size: 44px 42px;
 }
 
 input[type="submit"]:hover, input[type="button"]:hover, button:hover, .button:hover {
@@ -160,6 +161,6 @@ input[type="submit"]:hover, input[type="button"]:hover, button:hover, .button:ho
 }
 
 input[type="submit"]:active, input[type="button"]:active, button:active, .button:active {
-	left: 2px;
-	top: 3px;
+	left: 1px;
+	top: 1.5px;
 }
